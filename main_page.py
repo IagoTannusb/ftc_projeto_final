@@ -14,7 +14,7 @@ df = pd.read_csv('zomato.csv')
 df1 = df.copy()
 
 
-# Funcoes utilizadas
+# Funcoes utilizadas    
 def rename_columns(dataframe):
     df = dataframe.copy()
     title = lambda x: inflection.titleize(x)
@@ -316,7 +316,7 @@ with st.container():
 
 row8_spacer1, row8_1, row8_spacer2 = st.columns((.2, 7.1, .2))
 with row8_1:
-    st.markdown('## Tipos de Cusinhas')
+    st.markdown('## Tipos de Culinárias')
 
 with st.container():
     st.markdown( '### Metricas Gerais' )
@@ -333,7 +333,7 @@ with st.container():
         teste = 1
         teste2 = 10
         help_input='Restaurant: Ippudo \n\n Pais: England \n\n Cidade: Glasgow \n\n Prato para Dois: 20 Pounds(£)'
-        col2.metric(label="Ramen", value="2.9/5.0", delta="0.68", help=help_input)
+        col2.metric(label="Ramen", value="4.9/5.0", delta="0.68", help=help_input)
 
     with col3:
         teste = 1
@@ -345,7 +345,7 @@ with st.container():
         teste = 1
         teste2 = 10
         help_input='Restaurant: House of Curries on Florida \n\n Pais: South Africa \n\n Cidade: New York City \n\n Prato para Dois: 40 Dollar($)'
-        col4.metric(label="Durban", value="2.9", delta="- 1.22", help=help_input)
+        col4.metric(label="Durban", value="2.9/5.0", delta="- 1.22", help=help_input)
 
 
 
