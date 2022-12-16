@@ -113,7 +113,7 @@ df1_unique_cuisines = df1.drop_duplicates(subset='cuisines', keep='first')
 # =======================================
 # Barra Lateral
 # =======================================
-st.set_page_config(page_title="The Ramsey Highlights", layout="wide")
+st.set_page_config(page_title="AtlasFood", layout="wide")
 
 #st.sidebar.markdown( '# AtlasFood' )
 st.sidebar.markdown( '## O Melhor lugar para encontrar seu mais novo restaurante favorito!' )
@@ -431,7 +431,7 @@ with st.container():
                                                         .sort_values( by='restaurant_id',ascending = False)
                                                         .reset_index() )
     
-        #df1_country_city_group = df1.loc[:, ['cuisines', 'city']].drop_duplicates().groupby('city').count().sort_values('cuisines', ascending=False ).reset_index()
+
     
         df1_aggregate_rating_by_city_4.columns = ['Cidades', 'Quantidade de Restaurantes']
         fig = px.bar(df1_aggregate_rating_by_city_4, x='Cidades', y='Quantidade de Restaurantes', title= 'Restaurantes Com Media Maior que Quatro', text='Quantidade de Restaurantes')
