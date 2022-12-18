@@ -353,8 +353,7 @@ st.text('')
         
 with st.container():
     col1, col2, col3 = st.columns((.2, 7.1, .2))
-  
-    st.markdown( '# Metricas Gerais' )
+
     with col1:
         st.write(' ')
     
