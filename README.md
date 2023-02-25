@@ -49,7 +49,7 @@ Quais ferramentas serão usadas no processo?
 
 # **4. Top 3 insights de Dados**
 
-1. A maioria dos restaurantes no conjunto de dados está localizada na Índia, que é o maior mercado da AtlasFood.
+1. Dados os restaurantes cadastrados na AtlasFood, podemos afirmar que 70% desses estabelecimentos estão localizados em apenas três países: Índia, Estados Unidos e Inglaterra. A Índia é o país com o maior número de restaurantes cadastrados na plataforma, representando 44.9% do total.
 2. A distribuição de avaliações dos restaurantes na plataforma é fortemente inclinada para a direita, sugerindo que a maioria dos restaurantes é avaliada positivamente.
 3. A maioria dos restaurantes não permite reserva de mesa online, mas aceita pedidos online.
 
