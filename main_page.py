@@ -11,14 +11,17 @@
 ###########################################################################################################
 ###########################################################################################################
 
+
 import plotly.io as pio
 import pandas as pd
+import numpy as np
 import streamlit as st 
 import inflection
 import folium
 import plotly.express as px
 from folium.plugins import MarkerCluster
 from streamlit_folium import folium_static
+from PIL import Image
 
 ###### Dictionaries ######
 
@@ -80,19 +83,6 @@ def create_price_tye(price_range):
 def color_name(color_code):
     return COLORS[color_code]
 
-def rename_columns(dataframe):
-    df = dataframe.copy()
-    title = lambda x: inflection.titleize(x)
-    snakecase = lambda x: inflection.underscore(x)
-    spaces = lambda x: x.replace(" ", "")
-    cols_old = list(df.columns)
-    cols_old = list(map(title, cols_old))
-    cols_old = list(map(spaces, cols_old))
-    cols_new = list(map(snakecase, cols_old))
-    df.columns = cols_new
-    
-    return df
-
 def convert_df(df1):
     return df1.to_csv().encode('utf-8')
 
@@ -131,7 +121,7 @@ def clean_code (df1):
     ###### Adding Price Range ###### 
     df1['price_range'] = df1.loc[:, 'price_range'].apply(lambda x: create_price_tye(x))
 
-    ###### Adding Country Name ###### 
+    ###### Adding Color Name ###### 
     df1["rating_color"] = df1.loc[:, "rating_color"].apply(lambda x: color_name(x))
 
     ###### Prioritizing the type of cuisine ######
@@ -154,6 +144,7 @@ def df1_aggregate_rating_by_city_4( df1 ):
                                           .groupby('city')
                                           .count()
                                           .sort_values( by='restaurant_id',ascending = False)
+                                          .head(10)
                                           .reset_index() )
 
     df1_aggregate_rating_by_city_4.columns = ['Cidades', 'Quantidade de Restaurantes']
@@ -262,6 +253,7 @@ def df1_aggregate_rating_by_city_2( df1 ):
                                           .groupby('city')
                                           .count()
                                           .sort_values( by='restaurant_id',ascending = False)
+                                          .head(10)
                                           .reset_index() )
 
     df1_aggregate_rating_by_city_2.columns = ['Cidades', 'Quantidade de Restaurantes']
@@ -270,12 +262,16 @@ def df1_aggregate_rating_by_city_2( df1 ):
     return fig
 
 ###### Data Import ######
-df = pd.read_csv('zomato.csv')
+df = pd.read_csv('./data/data.csv')
 df1 = df.copy()
 df1 = clean_code(df1)
 
 ###### Side Bar ######
 st.set_page_config(page_title= "AtlasFood", layout="wide")
+
+image_path = './img/atlas_food_logo.jpeg'
+image = Image.open(image_path)
+st.sidebar.image(image)
 
 st.sidebar.markdown( '## O Melhor lugar para encontrar seu mais novo restaurante favorito!' )
 st.sidebar.markdown( """---""" )
@@ -459,7 +455,7 @@ with st.container():
 
     col1, col2 = st.columns( 2 )
     with col1:
-        df1_aggregate_rating_by_city_4( df1 )
+        fig = df1_aggregate_rating_by_city_4( df1 )
         chart_layout( fig )
         st.plotly_chart(fig, use_container_width=True )
         
