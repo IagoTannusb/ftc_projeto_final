@@ -10,25 +10,25 @@
 
 ## **1.1 Problema**
 
-A empresa AtlasFood é uma marketplace de restaurantes. Ou seja, seu core business é facilitar o encontro e negociações de clientes e restaurantes. Os restaurantes fazem o cadastro dentro da plataforma da AtlasFood, que disponibiliza informações como endereço, tipo de culinária servida, se possui reservas, se faz entregas e também uma nota de avaliação dos serviços e produtos do restaurante, dentre outras informações.
+A empresa AtlasFood é uma marketplace de restaurantes. Ou seja, seu core business é facilitar o encontro e negociações de clientes e restaurantes. Os restaurantes fazem o cadastro dentro da plataforma da AtlasFood, que disponibiliza informações como endereço, tipo de culinária servida, se possui reservas, se faz entregas e também uma nota de avaliação dos serviços e produtos do restaurante, dentre outras informações
 
 ## **1.2 Objetivo**
 
-Este projeto de insights tem o objetivo de fornecer um dashboard ao novo CEO que foi recem contratado e precisa entender melhor o negocio para que assim consiga tomar as melhores decisoes estrategicas.
+Este projeto de insights tem o objetivo de fornecer um dashboard ao novo CEO que foi recém-contratado e precisa entender melhor o negócio para que assim consiga tomar as melhores decisões estratégicas.
 
 # **2. Premissas do Negócio**
 
-1. O modelo de negocio assumido e um Marketplace;
+1. O modelo de negócio assumido é um Marketplace;
 2. As três principais perspectivas do negócio foram: visão geográfica (países), diversidade culinária (tipos de culinária) e perspectiva local (visão das cidades);
-3. Não há informações de datas neste DataFrame, o que implica que a dimensão temporal não foi considerada nas análises.”
+3. Não há informações de datas neste DataFrame, o que implica que a dimensão temporal não foi considerada nas análises.
 
 # **3. Planejamento da Solucao**
 
 ## **3.1. Produto final**
 
-O que definitivamente sera entregue?
+O que definitivamente será entregue?
 
-- Será entregue um dashboard interativo que poderá ser acessado tanto por computadores como por celulares, e que apresentará uma visão geral das análises solicitadas.
+- Será entregue um dashboard interativo que poderá ser acessado tanto por computadores como por celulares e que apresentará uma visão geral das análises solicitadas.
 
 ## **3.2. Ferramentas**
 
@@ -43,7 +43,7 @@ Quais ferramentas serão usadas no processo?
 
 1. Coleta de dados: Os dados foram entregues em formato .csv e serão mantidos para fins de análise.
 2. Compreensão dos dados: Entender os dados com os quais estou trabalhando.
-3. Limpeza de dados: Realizar a limpeza dos dados.
+3. Limpeza de dados: Realizar a limpeza dos dados..
 4. Análise exploratória: Explorar os dados e responder às perguntas do CEO.
 5. Disponibilização dos resultados: Criar um dashboard que resume as análises solicitadas.
 
@@ -51,12 +51,11 @@ Quais ferramentas serão usadas no processo?
 
 1. A maioria dos restaurantes no conjunto de dados está localizada na Índia, que é o maior mercado da AtlasFood.
 2. A distribuição de avaliações dos restaurantes na plataforma é fortemente inclinada para a direita, sugerindo que a maioria dos restaurantes é avaliada positivamente.
-3. O preço médio de uma refeição em um restaurante está positivamente correlacionado com a classificação média do restaurante, o que sugere que os clientes estão dispostos a pagar mais por refeições em restaurantes melhor avaliados.
+3. A maioria dos restaurantes não permite reserva de mesa online, mas aceita pedidos online.
 
 
 # **5. O produto final do projeto**
-
-O produto final do projeto é um dashboard online que resume as análises realizadas de forma clara e organizada. Esse dashboard estará hospedado na nuvem e será acessível por qualquer dispositivo conectado à internet. 
+O produto final do projeto é um dashboard online que resume as análises realizadas de forma clara e organizada. Esse dashboard estará hospedado na nuvem e será acessível por qualquer dispositivo conectado à internet.
 <div align="center">
 
 |         **Clique abaixo para acessar o dashboard**        |
@@ -66,7 +65,7 @@ O produto final do projeto é um dashboard online que resume as análises realiz
 
 # **6. Conclusao**
 
-Este projeto de insights teve como objetivo fornecer um dashboard ao novo CEO da AtlasFood, permitindo que ele entenda melhor o negócio e tome as melhores decisões estratégicas. As análises exploratórias realizadas revelaram insights importantes, incluindo a localização geográfica dos restaurantes, a diversidade culinária, a perspectiva local entre outras. O produto final do projeto é um dashboard online que resume as análises realizadas de forma clara e organizada.
+Este projeto de insights teve como objetivo fornecer um dashboard ao novo CEO da AtlasFood, permitindo que ele entenda melhor o negócio e tome as melhores decisões estratégicas. As análises exploratórias realizadas revelaram insights importantes, incluindo a localização geográfica dos restaurantes, a diversidade culinária, a perspectiva local, entre outras. O produto final do projeto é um dashboard online que resume as análises realizadas de forma clara e organizada.
 
 Com essas informações, o novo CEO da AtlasFood está bem equipado para tomar decisões informadas e bem fundamentadas para impulsionar o crescimento e o sucesso da empresa.
 
