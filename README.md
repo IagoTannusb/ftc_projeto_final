@@ -39,11 +39,11 @@ Quais ferramentas serão usadas no processo?
 3. Python
 4. Streamlit e Streamlitcloud
 
-## **3.3 Processo**
+## **3.3. Processo**
 
 1. Coleta de dados: Os dados foram entregues em formato .csv e serão mantidos para fins de análise.
 2. Compreensão dos dados: Entender os dados com os quais estou trabalhando.
-3. Limpeza de dados: Realizar a limpeza dos dados..
+3. Limpeza de dados: Realizar a limpeza dos dados.
 4. Análise exploratória: Explorar os dados e responder às perguntas do CEO.
 5. Disponibilização dos resultados: Criar um dashboard que resume as análises solicitadas.
 
