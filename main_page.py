@@ -152,16 +152,16 @@ def df1_aggregate_rating_by_city_4( df1 ):
     
     return fig 
 
-def df1_country_city_group( df1 ):
-    df1_country_city_group = (df1.loc[:, ['city', 'country_code']]
+def df1_country_group( df1 ):
+    df1_country_group = (df1.loc[:, ['city', 'country_code']]
                                  .drop_duplicates()
                                  .groupby('country_code')
                                  .count()
                                  .sort_values( by='city',ascending = False)
                                  .reset_index() )
 
-    df1_country_city_group.columns = ['Paises', 'Quantidade de Cidades']
-    fig = px.bar(df1_country_city_group, x='Paises', y='Quantidade de Cidades', title= 'Quantidade de Cidades Registradas por Países', text='Quantidade de Cidades')
+    df1_country_group.columns = ['Paises', 'Quantidade de Cidades']
+    fig = px.bar(df1_country_group, x='Paises', y='Quantidade de Cidades', title= 'Quantidade de Cidades Registradas por Países', text='Quantidade de Cidades')
     
     return fig
 
@@ -363,7 +363,7 @@ with st.container():
     st.markdown("""___""")
     st.markdown("## Visão Países")
 
-    fig = df1_country_city_group( df1 )
+    fig = df1_country_group(df1 )
     chart_layout( fig )
     st.plotly_chart(fig, use_container_width=True )
 
