@@ -60,7 +60,7 @@ O produto final do projeto é um dashboard online que resume as análises realiz
 
 |         **Clique abaixo para acessar o dashboard**        |
 |:------------------------:|
-|         [![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)]([https://iagotannusb-ftc-projeto-final-main-page-xbe5da.streamlit.app/](https://iagotannusb-ftc-projeto-final-main-page-xbe5da.streamlit.app/))
+|         [![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://iagotannusb-ftc-projeto-final-main-page-xbe5da.streamlit.app/))
 </div>
 
 # **6. Conclusao**
